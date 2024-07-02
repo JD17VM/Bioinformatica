@@ -1,0 +1,94 @@
+.celda{
+    background-color: greenyellow;
+    width:80px;
+    height:80px;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+    .celda > .num{
+        font-size: 2rem;
+    }
+
+
+    .celda > .flecha{
+        /*background-color:rgba(0, 0, 255, 0.387);*/
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        z-index: 100;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility:hidden;
+    }
+
+
+        .celda > .flecha > span{
+            font-size: 60px;
+        }
+
+
+        .celda > .flecha_izquierda{
+            left:-40px;
+            visibility: visible;
+        }.celda > .flecha_izquierda > span{
+            transform: rotate(0deg);
+        }
+
+        .celda > .flecha_diagonal_izquierda_arriba{
+            left:-40px;
+            top: -40px;
+            visibility: visible;
+        }.celda > .flecha_diagonal_izquierda_arriba > span{
+            transform: rotate(45deg);
+        }
+
+        .celda > .flecha_arriba{
+            top:-40px;
+            visibility: visible;
+        }.celda > .flecha_arriba > span{
+            transform: rotate(90deg);
+        }
+
+        .celda > .flecha_diagonal_derecha_arriba{
+            top:-40px;
+            left:40px;
+            visibility: visible;
+        }.celda > .flecha_diagonal_derecha_arriba > span{
+            transform: rotate(135deg);
+        }
+
+        .celda > .flecha_derecha{
+            left:40px;
+            visibility: visible;
+        }.celda > .flecha_derecha > span{
+            transform: rotate(180deg);
+        }
+
+        .celda > .flecha_diagonal_derecha_abajo{
+            left:40px;
+            top:40px;
+            visibility: visible;
+        }.celda > .flecha_diagonal_derecha_abajo > span{
+            transform: rotate(225deg);
+        }
+
+        .celda > .flecha_abajo{
+            top:40px;
+            visibility: visible;
+        }.celda > .flecha_abajo > span{
+            transform: rotate(270deg);
+        }
+
+.contenedor_matriz > .matriz{
+    display:grid;
+    width:240px;
+    background-color: red;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(3,1fr) ;
+}
