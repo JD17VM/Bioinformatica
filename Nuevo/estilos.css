@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+.inter-fuente_letra {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+:root{
+    --fuente_extra_gruesa:1000;
+    --fuente_gruesa:800;
+    --fuente_media: 600;
+    --fuente_delgada:400;
+
+    --fuente_tamanio_titulo_4:15px;
+    --fuente_tamanio_titulo_3:18px;
+    --fuente_tamanio_titulo_2:22px;
+    --fuente_tamanio_titulo_1:28px; 
+
+    --color_principal:#00281E;
+    --color_principal_claro:#c1ffef;
+    --color_blanco:#DDDDDD;
+    --color_negro:#101010;
+    --color_azul:#2E4367;  
+    --color_azul_claro:#EBF2FF;    
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color:inherit;
+    list-style-type: none;
+}
+
+
+input[type="text"] {
+    all: unset;
+}
+
+.navegador{
+    background-color:var(--color_principal);
+    color:var(--color_blanco);
+    height:100px;
+    padding:0 2rem;
+    font-size: var(--fuente_tamanio_titulo_3);
+}
+
+    .navegador > ul{
+        /*background-color: red;*/
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap:3rem;
+        font-weight: var(--fuente_media);
+    }
+
+    .navegador > ul .campo_texto_buscar{
+        display: flex;
+        align-items: center;
+        gap:0.5rem;
+        border: 2px solid var(--color_blanco);
+        border-radius: 5px;
+        padding:3px 0.5rem;
+
+    }
+
+    .navegador > ul .campo_texto_buscar > span{
+        font-weight: inherit;
+    }
+
+    .navegador > ul .campo_texto_buscar > input::placeholder{
+        color:inherit;
+    }
+
+
+.contenedor_funcionalidades{
+    display: flex;
+}
+
+.navegador_funcionalidades{
+    /*background-color: yellow;*/
+    display: flex;
+    font-size: var(--fuente_tamanio_titulo_4);
+    min-width: 330px;
+    height: calc(100vh - 100px);
+    overflow-y:auto;
+}
+
+.navegador_funcionalidades::-webkit-scrollbar {
+    display: none;
+}
+
+    .navegador_funcionalidades > ol{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .navegador_funcionalidades > ol > h2{
+        padding:10px 0;
+        font-size: var(--fuente_tamanio_titulo_4);
+        padding-left: 10px;
+    }
+
+    .navegador_funcionalidades > ol > li > div{
+        /*background-color: green;*/
+        padding:15px 10px;
+        border:2.5px solid #262626 ;
+        margin-top:-2.5px;
+    }
+
+    .navegador_funcionalidades > ol > li > div:hover{
+        cursor:pointer;
+        background-color: var(--color_principal_claro);
+    }
+
+    .navegador_funcionalidades > ol > li > div.seleccionado{
+        /*background-color: green;*/
+        border:none;
+        background-color: var(--color_principal);
+        color:var(--color_blanco);
+        font-weight: var(--fuente_gruesa);
+        margin-top:-2.5px;
+    }
+
+
+
+/*-----------------------------------------------------------*/
+
+.contenedor_funcionalidad{
+    /*background-color: black;*/
+    width:100%;
+    height: calc(100vh - 100px);
+}
+
+.contenedor_funcionalidad > h1{
+    font-size: var(--fuente_tamanio_titulo_1);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.contenedor_desarrollo_proceso{
+    /*background-color: red;*/
+    height: 400px;
+    width:95%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor_desarrollo_proceso > .contenedor_campo_texto{
+    height:100%;
+    width:43%;
+    /*background-color: blue;*/
+    /*border:2px solid black;*/
+}
+
+    .contenedor_desarrollo_proceso > .contenedor_campo_texto > .campo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor_desarrollo_proceso > .contenedor_campo_texto > .campo > textarea{
+        box-sizing: border-box;
+        padding:0.5rem 0.5rem;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        resize:none;
+    }
+
+    .contenedor_desarrollo_proceso > .contenedor_campo_texto > .campo > textarea:focus{
+        outline: none;
+    }
+
+.contenedor_desarrollo_proceso > .contenedor_resultado{
+    height:100%;
+    width:55%;
+    /*background-color: yellow;*/
+    /*border:2px solid black;*/
+}
+
+    .contenedor_desarrollo_proceso > div > .campo{
+        /*background-color: green;*/
+        height:calc(100% - 40px);
+        border:3px solid black;
+        border-color: #2E4367;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .contenedor_desarrollo_proceso > div > .contenedor_botones{
+        margin-top:-3px;
+        /*background-color: purple;*/
+        height:40px;
+        display: flex;
+        justify-content: space-between;
+        font-weight: var(--fuente_gruesa);
+    }
+
+    .contenedor_desarrollo_proceso > div > .contenedor_botones > button{
+        height:40px;
+        padding:0 1rem;
+        border:none;
+        border-radius: 0 0 10px 10px;
+        font-weight: inherit;
+        color:var(--color_blanco);
+    }
+
+    .contenedor_desarrollo_proceso > div > .contenedor_botones > button.subir{
+        background-color: #2E4367;
+    }
+
+    .contenedor_desarrollo_proceso > div > .contenedor_botones > button.convertir{
+        background-color: var(--color_principal);
+        
+    }
+
+    .contenedor_desarrollo_proceso > div > .contenedor_botones > button > span{
+        font-weight: inherit;
+        color:inherit;
+    }
+
+
+
+
+    .contenedor_desarrollo_proceso > div > .contenedor_botones > .cont{
+        background-color: #2E4367;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:1.5rem;
+        padding:0 1.5rem;
+        border-radius: 0 0 10px 10px;
+        font-weight: inherit;
+    }
+
+    .contenedor_desarrollo_proceso > div > .contenedor_botones > .cont > span{
+        font-weight: inherit;
+        color: var(--color_blanco);
+    }
+
+
+    .contenedor_resultado > .campo{
+        box-sizing: border-box;
+        padding:0.5rem;
+    }
+
+
+
+    button.convertir:hover{
+        cursor:pointer;
+    }
+
+
+
+.contenedor_indicaciones{
+    font-size: 13px;
+}

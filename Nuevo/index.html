@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navegador">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Descripción</a></li>
+            <li><a href="#">Funcionalidades</a></li>
+            <li>
+                <div class="campo_texto_buscar">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                    <input type="text" id="nombre" name="nombre" placeholder="Buscar">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="contenedor_funcionalidades">
+        <div class="navegador_funcionalidades">
+            <ol>
+                <h2>SECUENCIA</h2>
+                <li><a href="1.identificacion.html"><div>
+                    1. Identificación del tipo de secuencia
+                </a></div></li>
+                <li><div><a href="2.cantidad.html">
+                    2. Cantidad de elementos
+                </a></div></li>
+                <li><div  class="seleccionado">
+                    3. Transcripción
+                </div></li>
+                
+                <h2>ALINEAMIENTO DE 2 SECUENCIAS</h2>
+                <li><div>
+                    4. Matriz de puntos
+                </div></li>
+                <li><div>
+                    5. Alineamiento Global
+                </div></li>
+                <li><div>
+                    6. Alineamiento Local
+                </div></li>
+                <li><div>
+                    7. Alineamiento de Proteínas
+                </div></li>
+    
+                <h2>ALINEAMIENTO MÚLTIPLE</h2>
+                <li><div>
+                    8. Alineamiento Estrella
+                </div></li>
+                <li><div>
+                    9. Neighbor Joining
+                </div></li>
+                
+                
+                <h2>CLUSTERIZACIÓN</h2>
+                <li><div>
+                    10. Clusterización
+                </div></li>
+    
+                <h2>OTROS</h2>
+                <li><div>
+                    11. Alineamiento de Proteínas
+                </div></li>
+                <li><div>
+                    12. Estructura Secundaria
+                </div></li>
+            </ol>
+        </div>
+        <div class="contenedor_funcionalidad">
+            <h1>Identificación del tipo de secuencia</h1>
+            <p>Determina si la secuencia es ADN, ARN o proteína</p>
+            <div class="contenedor_desarrollo_proceso">
+                <div class="contenedor_campo_texto">
+                    <div class="campo">
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Secuencia"></textarea>
+                    </div>
+                    <div class="contenedor_botones">
+                        <button class="subir">
+                            <span class="material-symbols-outlined">
+                                upload
+                            </span>
+                        </button>
+                        <button class="convertir">
+                            Identificar
+                        </button>
+                    </div>
+                </div>
+                <div class="contenedor_resultado">
+                    <div class="campo">
+                        <p></p>
+                    </div>
+                    <div class="contenedor_botones">
+                        <div></div>
+                        <div class="cont">
+                            <span class="material-symbols-outlined">
+                                content_copy
+                            </span>
+                            <span class="material-symbols-outlined">
+                                download
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor_indicaciones">
+                <p>*Las secuencias deben ser añadidas cada una en una nueva línea*</p>
+                <p>*Para subir un archivo .txt, asegúrate de que las secuencias estén separadas por una línea en blanco*</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
